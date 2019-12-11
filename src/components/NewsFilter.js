@@ -8,7 +8,7 @@ const NewsFilter = (props)=>{
     </option>)
   })
   return (<select defaultValue="default" onChange={props.onFilter}>
-      <option value="default" disabled="disabled">Choose News Story</option>
+      <option value="default" >All news stories</option>
       {titles}
     </select>)
   }

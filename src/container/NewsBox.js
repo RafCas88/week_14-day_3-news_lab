@@ -26,7 +26,8 @@ class NewsBox extends Component {
     }
 
     handleFilter(event){
-      this.setState({selectedStories: [this.state.stories[event.target.value]]})
+      if(event.target.value === "default"){this.setState({selectedStories: this.state.stories})}
+      else{this.setState({selectedStories: [this.state.stories[event.target.value]]})}
     }
 
   render(){
